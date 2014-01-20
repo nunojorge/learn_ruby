@@ -7,7 +7,7 @@ require "temperature.rb"
 # Now maybe we can talk more about the lines we ignored last problem.
 # describe is a method that takes a sting and a do-end block.
 # The method is given to use by RSpec.
-# The string should describe what is being tested in the do-end block. 
+# The string should describe what is being tested in the do-end block.
 describe "temperature conversion functions" do
 
   describe "#ftoc" do
@@ -19,7 +19,7 @@ describe "temperature conversion functions" do
       ftoc(32).should == 0
     end
 
-    # The next three tests are similar, except different numbers are being passed in. 
+    # The next three tests are similar, except different numbers are being passed in.
     it "converts boiling temperature" do
       ftoc(212).should == 100
     end
@@ -34,8 +34,8 @@ describe "temperature conversion functions" do
 
   end
 
-  # Now this set of tests describes a different method, 
-  # not ftoc() anymore, but ctof(). 
+  # Now this set of tests describes a different method,
+  # not ftoc() anymore, but ctof().
   describe "#ctof" do
 
     it "converts freezing temperature" do
@@ -59,8 +59,8 @@ end
 # but 1.0/2.0 equals 0.5
 # It is important to know this difference to get these tests to pass.
 
-# Also, you can use the following information to figure out what the equation 
-# is to convert between the two units, fahrenheit and celsius: 
-# 
+# Also, you can use the following information to figure out what the equation
+# is to convert between the two units, fahrenheit and celsius:
+#
 # 1. One degree fahrenheit is 5/9 of one degree celsius
 # 2. The freezing point of water is 0 degrees celsius but 32 degrees fahrenheit
