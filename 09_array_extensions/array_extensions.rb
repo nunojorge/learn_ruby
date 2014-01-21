@@ -2,16 +2,20 @@ class Array
 
   def sum
     reduce(0) do |sum, value|
-        return sum + value
+        sum + value
     end
   end
 
   def square
-    map{|x| x*x}
+    map{|num|
+    	num * num
+    }
   end
 
   def square!
-    each_index{|i| x = self[i]; self[i]=x*x}
+    each_index{|a|
+    	num = self[a]; self[a]= num * num
+    }
   end
 
 end
