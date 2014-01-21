@@ -3,7 +3,8 @@ class Friend
 	end
 
 	def greet(name = nil)
-		return "Hello #{name}!"
+		returnls
+		 "Hello #{name}!"
 	end
 
 end
